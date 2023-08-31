@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
     text-decoration: none;
 }
 
@@ -25,23 +24,23 @@ body {
 
 /* GENERAL APPLICATION */
 .container {
-    border: 1px solid darkmagenta;
+    /* border: 1px solid darkmagenta; */
     width: 90%;
     margin: 0 auto;
 }
 
 .flex {
-    border: 1px solid darkcyan;
+    /* border: 1px solid darkcyan; */
     display: flex;
 }
 
-.content01 {
+/* .content01 {
     border: 1px dashed darkgreen;
-}
+} */
 
-.content02 {
+/* .content02 {
     border: 1px dashed darkblue;
-}
+} */
 
 section {
     border: 1px solid red;
@@ -52,8 +51,13 @@ section {
     font-size: 3.2rem;
 }
 
+.subtitle {
+    font-size: 2.4rem;
+}
+
 p {
     font-size: 1.6rem;
+    text-align: justify;
 }
 
 mark {
@@ -61,6 +65,10 @@ mark {
     border-radius: 0.8rem;
     padding: 0.2rem 0.8rem;
     font-weight: 700;
+}
+
+.detail {
+    color: var(--headline01);
 }
 
 /* INTRODUCTION */
@@ -81,7 +89,7 @@ h1.title {
 }
 
 .introduction .content01 p {
-    text-align: center;
+    /* text-align: center; */
     line-height: 150%;
     margin-bottom: 1.6rem;
     color: white;
@@ -95,8 +103,9 @@ h1.title {
 
 form {
     color: white;
-    border: 1px solid yellow;
     padding-inline: 1.6rem;
+    width: 28rem;
+    height: 41.6rem
 }
 
 form h2 {
@@ -156,7 +165,53 @@ form h2 {
     background-color: #0d4484;
     color: white;
     font-weight: 600;
+}
 
+/* VANTAGES */
+.vantages .flex {
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.vantages h2.subtitle {
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    color: var(--headline02);
+}
+
+ol {
+    list-style-position: inside;
+}
+
+ol li {
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+    text-align: justify;
+}
+
+.img-vantages {
+    width: 100%;
+}
+
+.vantages .content02 p {
+    margin-top: 3.2rem;
+}
+
+.cta {
+    display: block;
+    margin: 2.4rem auto 0;
+    padding: 1.6rem 3.2rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: #0d4484;
+}
+
+.cta a {
+    color: white;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: uppercase;
 }
 
 
